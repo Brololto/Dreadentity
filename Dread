@@ -86,6 +86,41 @@ end
 entityTable.Debug.OnDeath = function()
     warn("Player has died.")
 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 785, 0, 498)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 0, -0.130522087, 0)
+ImageLabel.Size = UDim2.new(0, 776, 0, 670)
+ImageLabel.Image = "rbxassetid://11036572035"
+ImageLabel.ImageTransparency = 0.700
+
+UIAspectRatioConstraint.Parent = ScreenGui
+UIAspectRatioConstraint.AspectRatio = 1.574
+
 
 end
 ------------------------------------
